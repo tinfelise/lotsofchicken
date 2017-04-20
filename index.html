@@ -75,6 +75,11 @@
 			<a href='#testimonials'>The Word</a>
 			<a href='#faqs'>The FAQs</a>
 			<a href='#houseCalls'>House Calls</a>
+			<div id='hamburger'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</nav>
 	</header>
 
@@ -248,6 +253,10 @@ $(window).scroll( function () {
 
 // Mobile nav menu
 $('nav').on("click", function () {
+	$('body').toggleClass('blurSubheader');
+	$('header').toggleClass('open');
+});
+$('header.open #logo').on("click", function () {
 	$('body').toggleClass('blurSubheader');
 	$('header').toggleClass('open');
 });

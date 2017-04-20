@@ -126,6 +126,9 @@ header.filledHeader a {
 .filledHeader #logo span:before {
 	background-image:url('images/icon_red.png');
 }
+#hamburger {
+	display:none;
+}
 
 #coop {
 	height:100vh;
@@ -969,7 +972,7 @@ footer #pay {
 }
 @media only screen and (max-width: 600px) {
 	nav {
-		margin-right:.5em;
+		/*margin-right:.5em;*/
 	}
 	nav a {
 		display:none;
@@ -977,10 +980,10 @@ footer #pay {
 		transition: all 1s ease;
 	}
 	nav a.current {
-		display:block;
+		display:inline-block;
 		opacity: 1;
 	}
-	nav:after {
+	/*nav:after {
 		content: '...';
 		transform: rotate(90deg);
 		float:right;
@@ -988,6 +991,24 @@ footer #pay {
 		margin: -1em;
 		text-align: left; 
 		line-height: 1em;
+	}*/
+	#hamburger {
+		display: block;
+		opacity:1;
+		float:right;
+		padding:0 .5em;
+		/*width: .5em;*/
+	}
+	#hamburger span {
+		display: block;
+		width: .25em;
+		height: .25em;
+		margin: 0.2em auto;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+	.filledHeader #hamburger span {
+		background-color: #FF5F5A;
 	}
 	header.open {
 		position: fixed;
@@ -1018,6 +1039,10 @@ footer #pay {
 	}
 	header.open nav a.current {
 		border-bottom: none;
+	}
+	header.open #hamburger {
+		display:none;
+		opacity: 0;
 	}
 	header.open nav:after {
 		content:'\00D7';
