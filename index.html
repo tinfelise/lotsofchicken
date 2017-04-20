@@ -215,7 +215,7 @@
 <script src="data.js"></script>
 <script type="text/javascript">
 
-$(window).on("scroll", function () {
+$(window).scroll( function () {
 	var position = $(this).scrollTop();
 	var header = $('header').height();
 	offsetPosition = position + header;
@@ -245,20 +245,6 @@ $(window).on("scroll", function () {
     // 	$('.sidebar').removeClass('scroll');
     // }
 });
-// $(document).scroll(function(){
-//     var st = $(this).scrollTop();
-
-//     $(section).each(function() {
-//         if(st > $(this).offset().top && st <= $(this).offset().top + $(this).height() ){                    
-//             var id = $(this).attr('id');
-//             $('a[href="#'+id+'"]').addClass('active');
-//         }else{
-//             var id = $(this).attr('id');
-//             $('a[href="#'+id+'"]').removeClass('active');   
-//         }   
-//     });
-
-// });
 
 // Mobile nav menu
 $('nav').on("click", function () {
