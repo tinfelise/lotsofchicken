@@ -252,12 +252,13 @@ $('nav').on("click", function () {
 	$('header').toggleClass('open');
 });
 
-var now = new Date();
-	now = now.getTime();
+
 
 function calendar () {
 	// var now = new Date($.now());
-	
+	var now = new Date();
+		now = now.getTime();
+
 	// var html, css;
 	var html = '';
 	var css = '';
@@ -786,6 +787,9 @@ function testURLs() {
 	}
 };
 function testOpen () {
+	var now = new Date();
+		now = now.getTime();
+		
 	var second = 1000;
 	var hour = second*60*60;
 	
