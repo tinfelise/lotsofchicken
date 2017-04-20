@@ -302,20 +302,20 @@ function calendar () {
 				'#event_' + i + '{' +
 					'background-image:url(' + loc.image + ')' +
 				'}';
-			if (eventCount == 1) {
-				createCountdown(start);
-				$('#current').append(
-					'<div id=\'currentPlace\'>' + 
-						'<span>' + loc.name + ' | </span> ' + 
-						// '<span>' + loc.neighborhood + ' | <\/span> ' + 
-						'<span>' + loc.city + '</span> ' + 
-					'</div>' +
-					'<div id=\'currentTime\'>' + 
-						'<span>' + moment(start).format('dddd, MMMM Do') + '</span>' + 
-						' | <span>' + startTime + ' to ' + endTime + '</span>' + 
-					'</div>'
-				);
-			};
+			// if (eventCount == 1) {
+			// 	createCountdown(start);
+			// 	$('#current').append(
+			// 		'<div id=\'currentPlace\'>' + 
+			// 			'<span>' + loc.name + ' | </span> ' + 
+			// 			// '<span>' + loc.neighborhood + ' | <\/span> ' + 
+			// 			'<span>' + loc.city + '</span> ' + 
+			// 		'</div>' +
+			// 		'<div id=\'currentTime\'>' + 
+			// 			'<span>' + moment(start).format('dddd, MMMM Do') + '</span>' + 
+			// 			' | <span>' + startTime + ' to ' + endTime + '</span>' + 
+			// 		'</div>'
+			// 	);
+			// };
 		};
 	};
 
@@ -332,7 +332,7 @@ function calendar () {
 	if (eventCount > 0) {
 		$('#upcoming').append(html);
 		injectStyles(css);
-		$('.event:first-of-type').addClass('upNext');
+		// $('.event:first-of-type').addClass('upNext');
 	} else {
 		$('#rapResponse').html('Nope! (Sorry)');
 		$('#current').html('No upcoming chicken events');
@@ -394,6 +394,7 @@ function formatTime(time) {
 // 	});
 // };
 function createCountdown (timestamp) {
+	$('#coop #pay').removeClass('viewPay');
 	$('#countdown').countdown(timestamp)
 		.on('update.countdown', function(event) {
 			var format = '<div>In ';
@@ -418,20 +419,54 @@ function createCountdown (timestamp) {
 			$('#coop #pay').addClass('viewPay');
 		});
 };
-// function createCountdown (timestamp) {
-// 	$("#countdown").countdown(timestamp)
-// 		.on('update.countdown', function(event) {
-// 		    var format = 'In ' +
-// 		      	// '<span>%w</span> week%!W ' +
-// 			    '<strong><span>%-D</span> day%!D</strong> ' +
-// 			    '<strong><span>%-H</span> hour%!H</strong> ' +
-// 			    '<strong><span>%-M</span> minute%!M</strong> ' +
-// 			    '<strong><span>%-S</span> second%!S</strong>';
-// 			$(this).html(event.strftime(format));
-// 		})
-// };
-// createCountdown(test);
-// createCountdown(Date.parse(events[1].start));
+function createEventDetails(id) {
+	var x = events[id];
+	var loc = locations[x.location - 1];
+	
+	var start = x.start;
+	if (!$.isNumeric(start)) {
+		start = Date.parse(start);
+	};
+	var end = x.end;
+	if (!$.isNumeric(end)) {
+		end = Date.parse(end);
+	};
+	
+	var day = moment(start).format('D');
+	var mon = moment(start).format('MMM');
+	
+	var startTime = moment(start).format('kk:mm');
+		startTime = formatTime(startTime);
+	var endTime = moment(end).format('kk:mm');
+		endTime = formatTime(endTime);
+
+	createCountdown(start);
+	$('#current').html(
+		'<div id=\'currentPlace\'>' + 
+			'<span>' + loc.name + ' | </span> ' + 
+			// '<span>' + loc.neighborhood + ' | <\/span> ' + 
+			'<span>' + loc.city + '</span> ' + 
+		'</div>' +
+		'<div id=\'currentTime\'>' + 
+			'<span>' + moment(start).format('dddd, MMMM Do') + '</span>' + 
+			' | <span>' + startTime + ' to ' + endTime + '</span>' + 
+		'</div>'
+	);
+	$('.event').removeClass('upNext');
+	$('#event_' + id).addClass('upNext');
+};
+function getFirstUpcoming() {
+	var id = $('.event:first-of-type').attr('id');
+	id = id.split('_')[1];
+	createEventDetails(id);
+};
+getFirstUpcoming();
+$('.event').on('click', function() {
+	var id = $(this).attr('id');
+	id = id.split('_')[1];
+	createEventDetails(id);
+});
+
 var countdownState = 1;
 function toggleCountdown() {
 	if (countdownState == 1) {
@@ -789,7 +824,7 @@ function testURLs() {
 function testOpen () {
 	var now = new Date();
 		now = now.getTime();
-		
+
 	var second = 1000;
 	var hour = second*60*60;
 	
