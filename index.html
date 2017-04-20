@@ -647,7 +647,7 @@ function createInviteLinks() {
 	shareTypes.push(twitter);
 
 	$(shareTypes).each(function() {
-		console.log(this.url);
+		// console.log(this.url);
 		$('.' + this.type + '_share').attr('href',this.url);
 	});
 };
