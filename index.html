@@ -220,6 +220,7 @@
 <script src="data.js"></script>
 <script type="text/javascript">
 
+//Scroll events
 $(window).scroll( function () {
 	var position = $(this).scrollTop();
 	var header = $('header').height();
@@ -255,14 +256,13 @@ $(window).scroll( function () {
 $('nav').on("click", function () {
 	$('body').toggleClass('blurSubheader');
 	$('header').toggleClass('open');
+	$('header.open #logo').on("click", function () {
+		$('body').toggleClass('blurSubheader');
+		$('header').toggleClass('open');
+	});
 });
-$('header.open #logo').on("click", function () {
-	$('body').toggleClass('blurSubheader');
-	$('header').toggleClass('open');
-});
 
-
-
+// Create upcoming events calendar, countdown, pay button, etc.
 function calendar () {
 	// var now = new Date($.now());
 	var now = new Date();
