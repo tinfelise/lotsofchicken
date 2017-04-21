@@ -19,6 +19,12 @@ body {
 	background-color: #fafafa;
 	color:#2e343b;
 }
+h1,
+h2,
+h3 {
+	font-family: 'Roboto', sans-serif;
+	/*font-weight:700;*/
+}
 /*body * {
 	border:1px solid black;
 }*/
@@ -160,6 +166,7 @@ h1 {
 h1 strong {
 	text-transform: uppercase;
 	display: block;
+	font-weight: inherit;
 }
 .locator {
 	margin: auto;
@@ -308,6 +315,7 @@ h1 strong {
 }
 #countdown span {
 	font-size:2em;
+	font-family: 'Roboto', sans-serif;
 }
 #current {}
 #current span {
