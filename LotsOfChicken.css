@@ -648,7 +648,7 @@ h2:before {
 }
 .testimonialPreview {
 	text-align: center;
-	text-shadow: 0px 0px 4em #555;
+	/*text-shadow: 0px 0px 4em #555;*/
 	font-size:.75em;
 	position: absolute;
 	bottom:1em;
@@ -664,6 +664,10 @@ h2:before {
 }*/
 .testimonialPreview a i {
 	display:block;
+}
+.testimonialPreview a:hover i {
+	color:#fff;
+	text-shadow: 0px 0px 2em #fff;
 }
 /*.testimonialPreview a i:last-of-type {
 	display:none;
