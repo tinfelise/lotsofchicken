@@ -982,7 +982,7 @@ footer #pay {
 		font-size: .75em;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	nav {
 		/*margin-right:.5em;*/
 	}
@@ -1320,6 +1320,42 @@ footer #pay {
 	footer #pay {
 		width: 90%;
 		margin: .5em auto;
+	}
+}
+
+@media only screen and (max-width: 700px) and (orientation:landscape) {
+	header.open nav {
+		margin-top:0;
+	}
+	header.open nav a {
+		margin:1em;
+	}
+	.locator:before,
+	h1 {
+		/*display: inline-block;*/
+		float:left;
+	}
+	#countdown {
+		float:right;
+		margin-top:0;
+	}
+	#current {
+		float:right;
+		width:100%;
+		margin-top:1em;
+	}
+	#invite.popup span {
+		margin: 0 auto;
+	}
+	#invite.popup div:last-of-type {
+		margin-bottom: 5%;
+	}
+	#team {
+	    background-position: center;
+	    min-height: 100vh;
+	}
+	.testimonial .photo {
+		padding-bottom: 75vh !important;
 	}
 }
 
