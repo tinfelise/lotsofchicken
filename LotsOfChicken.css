@@ -1049,8 +1049,20 @@ footer #pay {
 		color:#fff !important;
 		margin:2em;
 	}
+	header.open nav a:before {
+		content: '.';
+		height:1em;
+		width:.25em;
+		margin-right: .25em;
+		background-color:#fff;
+		color:#fff;
+		visibility: hidden;
+	}
 	header.open nav a.current {
 		border-bottom: none;
+	}
+	header.open nav a.current:before {
+		visibility: visible;
 	}
 	header.open #hamburger {
 		display:none;
@@ -1328,7 +1340,7 @@ footer #pay {
 		margin-top:0;
 	}
 	header.open nav a {
-		margin:1em;
+		margin: 1em 1.25em;
 	}
 	.locator:before,
 	h1 {
