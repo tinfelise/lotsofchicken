@@ -35,7 +35,8 @@ var menu = [
 		'quantityType':'pieces',
 		'sawce':'Buffalo',
 		'price':'6',
-		'description':'Vaporware VHS synth, ugh green juice prism raclette subway tile poutine hammock umami actually. Salvia man braid iPhone venmo disrupt, franzen hexagon chia gentrify locavore put a bird on it cliche banh mi tacos. Green juice farm-to-table iceland brunch. Live-edge williamsburg etsy crucifix, vegan listicle copper mug keytar blue bottle. Authentic four loko tousled kombucha bushwick, skateboard mustache health goth kickstarter synth banjo knausgaard quinoa. Actually shabby chic jean shorts, vegan cray banh mi photo booth succulents kitsch echo park selfies iPhone literally slow-carb YOLO.'
+		'description':'Vaporware VHS synth, ugh green juice prism raclette subway tile poutine hammock umami actually. Salvia man braid iPhone venmo disrupt, franzen hexagon chia gentrify locavore put a bird on it cliche banh mi tacos. Green juice farm-to-table iceland brunch. Live-edge williamsburg etsy crucifix, vegan listicle copper mug keytar blue bottle. Authentic four loko tousled kombucha bushwick, skateboard mustache health goth kickstarter synth banjo knausgaard quinoa. Actually shabby chic jean shorts, vegan cray banh mi photo booth succulents kitsch echo park selfies iPhone literally slow-carb YOLO.',
+		'image':'/images/wings.jpg'
 	},
 	{
 		'item':'nugs',
@@ -43,7 +44,8 @@ var menu = [
 		'quantityType':'pieces',
 		'sawce':'Honey Mustard',
 		'price':'5',
-		'description':'3 wolf moon chartreuse fingerstache etsy copper mug meggings. Forage flannel kickstarter, authentic hashtag intelligentsia godard. Hammock lumbersexual freegan, enamel pin tumeric normcore bespoke wolf. Raclette listicle cardigan irony, unicorn poke photo booth drinking vinegar. Shabby chic lo-fi pug snackwave kale chips, wayfarers 8-bit tote bag biodiesel godard. Food truck thundercats DIY, put a bird on it master cleanse green juice man braid truffaut craft beer. Cold-pressed microdosing beard skateboard echo park.'
+		'description':'3 wolf moon chartreuse fingerstache etsy copper mug meggings. Forage flannel kickstarter, authentic hashtag intelligentsia godard. Hammock lumbersexual freegan, enamel pin tumeric normcore bespoke wolf. Raclette listicle cardigan irony, unicorn poke photo booth drinking vinegar. Shabby chic lo-fi pug snackwave kale chips, wayfarers 8-bit tote bag biodiesel godard. Food truck thundercats DIY, put a bird on it master cleanse green juice man braid truffaut craft beer. Cold-pressed microdosing beard skateboard echo park.',
+		'image':'/images/nugs.jpg'
 	}
 ];
 
