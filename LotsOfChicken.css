@@ -1376,6 +1376,9 @@ footer #pay {
 	.testimonial .photo {
 		padding-bottom: 75vh !important;
 	}
+	#faqs ul {
+		column-count: 2;
+	}
 }
 
 .fadeRight {
