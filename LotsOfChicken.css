@@ -754,6 +754,9 @@ h2:before {
 h3 {
 	margin-top:0;
 }
+#faqs li a {
+	text-decoration: underline;
+}
 
 #houseCalls {
 	background-image: url(images/day1/loc-6_cropped.jpg);

@@ -78,6 +78,18 @@ var faqs = [
 	{
 		'question':'But please??? I really want some blue cheese!',
 		'answer':'Does this look like a cheese stand to you?'
+	},
+	{
+		'question':'Does LOC do private events?',
+		'answer':'Of cawse we do! <a href="#houseCalls">Hit us up</a>'
+	},
+	{
+		'question':'What\'s in the sawce?',
+		'answer':'SHHHHH it\'s a secret, sorry!'
+	},
+	{
+		'question':'Are the goods glute\u2026?',
+		'answer':'Nope, there\'s gluten and dairy in the chicken and sawce, sorry! Gluten free recipes in the workz.'
 	}
 ];
 
