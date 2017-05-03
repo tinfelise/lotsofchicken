@@ -732,27 +732,36 @@ h2:before {
 	background-color: #ff5a5f;
 }
 #faqs ul {
-	float: left;
+	/*float: left;*/
 	list-style: none;
 	padding:0;
 	margin:0;
 	/*width:200%;*/
+	column-count: 3;
 }
 #faqs li {
-	float:left;
-	width: 25%;
-	min-width: 400px;
+	/*float:left;*/
+	/*width: 45%;*/
+	/*min-width: 400px;*/
     padding: 1em;
-    margin: .5em;
+    margin: .5em 0;
     border:1px solid #ccc;
     border-radius:1em;
     background-color: #fff;
+    width:100%;
+    display: inline-block;
 }
 h3 {
 	margin-top:0;
 }
 #faqs li a {
 	text-decoration: underline;
+}
+.masonry {
+	column-count: 2;
+}
+.masonry li {
+	display: inline-block;
 }
 
 #houseCalls {
@@ -973,9 +982,8 @@ footer #pay {
 		border-radius: 0 1em 1em 1em;
 	}
 
-	#faqs li {
-		width:45%;
-		min-width: initial;
+	#faqs ul {
+		column-count: 2;
 	}
 
 	footer .love {
@@ -1294,9 +1302,8 @@ footer #pay {
 		border-radius: 1em 0 1em 1em;
 	}
 
-	#faqs li {
-		width:100%;
-		margin: 0 auto 1em;
+	#faqs ul {
+		column-count: 1;
 	}
 
 	.testimonial {
