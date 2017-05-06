@@ -253,6 +253,16 @@ $(window).scroll( function () {
     // }
 });
 
+//Smooth scrolling to anchor tags
+$( document ).ready(function() {
+	$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function() {
+		var destination = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(destination).offset().top
+		}, 1000);
+	});
+});
+
 // Mobile nav menu
 $('nav').on("click", function () {
 	$('body').toggleClass('blurSubheader');
