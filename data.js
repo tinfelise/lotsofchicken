@@ -57,10 +57,10 @@ var testimonialsData = [
 		'quote':'Best buffalo wings I\'ve ever had.'
 	},
 	{
-		'name':'Ale',
-		'title':'Argentinian Dude',
-		'photo':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/AlejandroResnik_-_CEO_Beepi.jpg/2880px-AlejandroResnik_-_CEO_Beepi.jpg',
-		'quote':'I just can\'t.'
+		'name':'Sanders',
+		'title':'A Colonel',
+		'photo':'images/testimonials/col-sanders.jpg',
+		'quote':'Best chicken fried outside of Kentucky.'
 	},
 	{
 		'name':'Isaiah',
