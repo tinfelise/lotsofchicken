@@ -67,7 +67,7 @@ var testimonialsData = [
 		'name':'Isaiah',
 		'title':'NBA Star',
 		'photo':'https://usatftw.files.wordpress.com/2017/02/isaiah-thomas-dunk.jpg?w=1000&h=600&crop=1',
-		'quote':'@LOC-Chicken &#x1f440;'
+		'quote':'@LotsofChix &#x1f440;'
 	}
 ];
 
