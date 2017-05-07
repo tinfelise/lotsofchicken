@@ -30,7 +30,7 @@
 	<meta property="og:image:width" content="3600">
 	<meta property="og:image:height" content="2400">
 	<meta property="restaurant:menu" content="http://lotsofchicken.com/#menu">
-	<meta property="restaurant:contact_info:website" content="lotsofchicken.com/">
+	<meta property="restaurant:contact_info:website" content="http://lotsofchicken.com/">
 	<meta property="restaurant:contact_info:street_address" content="Dolores St & 19th St">
 	<meta property="restaurant:contact_info:locality" content="San Francisco">
 	<meta property="restaurant:contact_info:region" content="CA">
@@ -737,7 +737,7 @@ function createMetadata () {
 		'<meta property="og:type" content="restaurant.restaurant">' +
 		'<meta property="og:title" content="' + title + '">' +
 		'<meta property="og:site_name" content="' + name + '">' +
-		'<meta property="og:url" content="' + domain + '">' +
+		'<meta property="og:url" content="http://' + domain + '">' +
 		'<meta property="og:description" content="' + description + '">' +
 		'<meta property="og:image" content="' + image + '">';
 	if (width) {
@@ -748,7 +748,7 @@ function createMetadata () {
 	};
 	openGraph +=
 		'<meta property="restaurant:menu" content="' + menu + '">' +
-		'<meta property="restaurant:contact_info:website" content="' + domain + '">' +
+		'<meta property="restaurant:contact_info:website" content="http://' + domain + '">' +
 		'<meta property="restaurant:contact_info:street_address" content="' + address.street + '">' +
 		'<meta property="restaurant:contact_info:locality" content="' + address.city + '">' +
 		'<meta property="restaurant:contact_info:region" content="' + address.state + '">' +
