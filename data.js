@@ -20,12 +20,13 @@ var events = [
 		'location':'1',
 		'start': 'May 13 2017 13:00:00 PDT',
 		'end': 'May 13 2017 16:00:00 PDT'
-	},
-	{
-		'location':'1',
-		'start': 'Jun 10 2017 08:00:00 PDT',
-		'end': 'Jun 10 2017 15:00:00 PDT'
 	}
+	// ,
+	// {
+	// 	'location':'1',
+	// 	'start': 'Jun 10 2017 08:00:00 PDT',
+	// 	'end': 'Jun 10 2017 15:00:00 PDT'
+	// }
 ];
 
 var menu = [
