@@ -759,13 +759,16 @@ function createMetadata () {
 	if (phone != '') {
 		openGraph += '<meta property="restaurant:contact_info:phone_number" content="' + phone + '">';
 	};
-	var twitterHandle = '@LotsofChix'
+	
+	var twitterHandle = '@LotsofChix';
+	var altImage = 'Making awesome wings in Dolores Park';
 	var twitterCard =
 		'<meta name="twitter:card" content="summary_large_image">' +
 		'<meta name="twitter:site" content="' + twitterHandle + '">' +
 		'<meta name="twitter:title" content="' + title + '">' +
 		'<meta name="twitter:description" content="' + description + '">' +
-		'<meta name="twitter:image" content="' + image + '">';
+		'<meta name="twitter:image" content="' + image + '">' +
+		'<meta name="twitter:image:alt" content="' + altImage + '">';
 
 	var reservations = 'No';
 	var cuisine = 'Chicken Wings';
