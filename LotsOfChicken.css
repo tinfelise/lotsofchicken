@@ -138,7 +138,9 @@ header.filledHeader a {
 
 #coop {
 	height:100vh;
-	background-image:url('images/day1/loc-4.jpg');
+	/*background-image:url('images/day1/loc-4.jpg');*/
+	background-image:url('http://i.imgur.com/zCPF5MU.jpg');
+	background-image:url('http://i.imgur.com/j2aWMCH.jpg');
 	background-size: cover;
 	background-position: center;
 	position:relative;
@@ -925,11 +927,17 @@ footer #pay {
 	header {
 		font-size: 1em;
 	}
+	#coop {
+		background-image: url('http://i.imgur.com/NQlVRFv.jpg');
+	}
 	.testimonial {
 		height:20vh;
 	}
 }
 @media only screen and (max-width: 900px) {
+	#coop {
+		background-image: url('http://i.imgur.com/d8goQME.jpg');
+	}
 	.locator {
 		width:100%;
 		z-index: 2 !important;
@@ -1098,6 +1106,7 @@ footer #pay {
 		filter:blur(5px);	
 	}
 	#coop {
+		background-image: url('http://i.imgur.com/fMKyj3S.jpg');
 		background-position: left bottom;
 		padding:0;
 		height:90vh;
