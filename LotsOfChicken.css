@@ -230,6 +230,9 @@ h1 strong {
 	);
     padding: 10% 0;
 }
+div#upcoming::-webkit-scrollbar {
+	display:none;
+}
 .event {
 	/*color:#fff;*/
 	width: 100%;
