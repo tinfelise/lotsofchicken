@@ -5,7 +5,7 @@ var locations = [
 		'neighborhood': 'The Mission',
 		'city': 'San Francisco',
 		'state' : 'CA',
-		'image':'http://ww3.hdnux.com/photos/45/35/34/9819958/3/920x920.jpg',
+		'image':'images/events/dolores.jpg',
 		'directions':'https://goo.gl/maps/mEHkmVcygF72'
 	}
 ];
@@ -66,7 +66,7 @@ var testimonialsData = [
 	{
 		'name':'Isaiah',
 		'title':'NBA Star',
-		'photo':'https://usatftw.files.wordpress.com/2017/02/isaiah-thomas-dunk.jpg?w=1000&h=600&crop=1',
+		'photo':'images/testimonials/isaiah.jpg',
 		'quote':'@LotsofChix &#x1f440;'
 	}
 ];

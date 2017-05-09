@@ -139,8 +139,8 @@ header.filledHeader a {
 #coop {
 	height:100vh;
 	/*background-image:url('images/day1/loc-4.jpg');*/
-	background-image:url('http://i.imgur.com/zCPF5MU.jpg');
-	background-image:url('http://i.imgur.com/j2aWMCH.jpg');
+	background-image:url('https://i.imgur.com/zCPF5MU.jpg');
+	background-image:url('https://i.imgur.com/j2aWMCH.jpg');
 	background-size: cover;
 	background-position: center;
 	position:relative;
@@ -478,7 +478,7 @@ h2:before {
 	background-image: url('images/wings.jpg');
 }
 #nugs-info {
-	background-image: url('http://cdn.abclocal.go.com/content/wabc/images/cms/1699324_1280x720.jpg');
+	/*background-image: url('http://cdn.abclocal.go.com/content/wabc/images/cms/1699324_1280x720.jpg');*/
 }
 #water-info {
 	background-image: url('images/water.jpg');
@@ -931,7 +931,7 @@ footer #pay {
 		font-size: 1em;
 	}
 	#coop {
-		background-image: url('http://i.imgur.com/NQlVRFv.jpg');
+		background-image: url('https://i.imgur.com/NQlVRFv.jpg');
 	}
 	.testimonial {
 		height:20vh;
@@ -939,7 +939,7 @@ footer #pay {
 }
 @media only screen and (max-width: 900px) {
 	#coop {
-		background-image: url('http://i.imgur.com/d8goQME.jpg');
+		background-image: url('https://i.imgur.com/d8goQME.jpg');
 	}
 	.locator {
 		width:100%;
@@ -1109,7 +1109,7 @@ footer #pay {
 		filter:blur(5px);	
 	}
 	#coop {
-		background-image: url('http://i.imgur.com/fMKyj3S.jpg');
+		background-image: url('https://i.imgur.com/fMKyj3S.jpg');
 		background-position: left bottom;
 		padding:0;
 		height:90vh;
