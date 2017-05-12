@@ -915,13 +915,13 @@ footer #pay {
    clear: both;
 }
 
-@keyframes xfade {
+/*@keyframes xfade {
 	0% {opacity: 1;}
-	98% {opacity: 0;}
-	100% {opacity: 1;}
 	15.000000000000002% {opacity: 1;}
 	16.666666666666668% {opacity: 0;}
-}
+	98% {opacity: 0;}
+	100% {opacity: 1;}
+}*/
 
 @keyframes GradientAnimation { 
     0%{background-position:0% 44%}
