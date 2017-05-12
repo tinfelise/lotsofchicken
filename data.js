@@ -6,7 +6,8 @@ var locations = [
 		'city': 'San Francisco',
 		'state' : 'CA',
 		'image':'images/events/dolores.jpg',
-		'directions':'https://goo.gl/maps/mEHkmVcygF72'
+		// 'directions':'https://goo.gl/maps/mEHkmVcygF72'
+		'directions':'https://www.google.com/maps/dir//37.7596212,-122.4271384/@37.7595482,-122.4283811,17.23z'
 	}
 ];
 
