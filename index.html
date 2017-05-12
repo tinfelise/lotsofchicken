@@ -238,7 +238,9 @@
 $(window).scroll( function () {
 	var position = $(this).scrollTop();
 	var header = $('header').height();
-	offsetPosition = position + header;
+	var offsetPosition = position + header;
+	var height = $(window).height();
+	var bottom = position + height;
 
 	// Nav bar positioning
     $('section').each(function() {
@@ -256,7 +258,7 @@ $(window).scroll( function () {
     }
     else {
         $("header").removeClass("filledHeader");
-    }
+    };
 
     // Mobile upcoming bar placement
     // if (position > 0) {
@@ -264,6 +266,14 @@ $(window).scroll( function () {
     // } else {
     // 	$('.sidebar').removeClass('scroll');
     // }
+
+    // Chickenback Animation
+    var guaranteePosition = $('.guarantee').offset().top + $('.guarantee').height();
+    if (bottom > guaranteePosition && guaranteePosition > offsetPosition) {
+    	$('.guarantee').addClass('wiggle');
+    } else {
+    	$('.guarantee').removeClass('wiggle');
+    }
 });
 
 //Smooth scrolling to anchor tags
