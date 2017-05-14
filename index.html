@@ -500,9 +500,11 @@ function createEventDetails(id) {
 	$('#event_' + id).addClass('upNext');
 };
 function getFirstUpcoming() {
-	var id = $('.event:first-of-type').attr('id');
-	id = id.split('_')[1];
-	createEventDetails(id);
+	if ($('.event').length > 0) {
+		var id = $('.event:first-of-type').attr('id');
+		id = id.split('_')[1];
+		createEventDetails(id);
+	};
 };
 getFirstUpcoming();
 $('.event').on('click', function() {
