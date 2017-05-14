@@ -91,12 +91,17 @@ header {
     width: 100%;
     z-index: 10;
     color:#fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
 }
 header a {
 	color:#fff !important;
 }
 #logo {
-	float:left;
+	/*float:left;*/
 }
 #logo span:before {
 	content: '';
@@ -109,7 +114,7 @@ header a {
 	margin-right:.25em;
 }
 nav {
-	float:right;
+	/*float:right;*/
 }
 nav a {
 	margin:0 .25em;
@@ -1077,6 +1082,7 @@ footer #pay {
 		bottom:0;
 		background-color: rgba(0,0,0,.5);
 		color:#fff;
+		display:block;
 	}
 	header.open #logo {
 		float:none;
