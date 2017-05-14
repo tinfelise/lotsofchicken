@@ -326,6 +326,14 @@ div#upcoming::-webkit-scrollbar {
 #current span {
 	white-space: nowrap;
 }
+#current a {
+	display:block;
+	text-transform: uppercase;
+	margin: .5em auto;
+	/*padding: .5em;
+	border: 1px solid #fff;
+	border-radius: .5em;*/
+}
 
 #pay {
 	background-color: #fff;
