@@ -536,6 +536,9 @@ h2:before {
 	);
 	transition: all ease .5s;
 }
+.food .description::-webkit-scrollbar {
+	display:none;
+}
 .food:hover .info {
 	background-color: #fff;
 }
