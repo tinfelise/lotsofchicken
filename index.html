@@ -157,7 +157,18 @@
 	</section>
 
 	<section id='team' class='backgroundImage'>
-		<h2>The Wing Men</h2>
+		<h2 class='initial'>
+			<span>The Chicken Guys</span>
+			<span>Ummm...</span>
+			<span>The Fowl Dudes</span>
+			<span>What about...</span>
+			<span>The Wing Men</span>
+			<span>No wait... I got it...</span>
+			<span>The Taste Buds</span>
+			<span>OMG... OMG...</span>
+			<span>Introducing...</span>
+			<span>The Taste Buds</span>
+		</h2>
 		<div class='team clearfix'>
 			<div class='member' id='alec'>
 				<span class='name'>Alec</span>
@@ -273,6 +284,12 @@ $(window).scroll( function () {
     	$('.guarantee').addClass('wiggle');
     } else {
     	$('.guarantee').removeClass('wiggle');
+    }
+
+    // Team section title changing
+    var teamTitlePosition = $('#team h2').offset().top + $('#team h2').height();
+    if (bottom > teamTitlePosition) {
+    	$('#team h2').removeClass('initial');
     }
 });
 

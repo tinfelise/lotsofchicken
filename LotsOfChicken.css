@@ -644,6 +644,69 @@ h2:before {
 	min-height:75vh;
 	position: relative;
 }
+#team h2 {
+	position: relative;
+}
+#team h2 span {
+	position:absolute;
+	opacity: 0;
+}
+#team h2 span:last-of-type {
+	opacity:1;
+}
+#team h2.initial span {
+	opacity:0 !important;
+	animation:none !important;
+}
+#team h2.initial span:first-of-type {
+	opacity:1 !important;
+}
+#team h2 span:nth-child(1) {
+	animation: xfade_teamNames_first 6s 0s 1;
+}
+#team h2 span:nth-child(2) {
+	animation: xfade_teamNames 4s 5s 1;
+}
+#team h2 span:nth-child(3) {
+	animation: xfade_teamNames 4s 8s 1;
+}
+#team h2 span:nth-child(4) {
+	animation: xfade_teamNames 4s 11s 1;
+}
+#team h2 span:nth-child(5) {
+	animation: xfade_teamNames 4s 14s 1;
+}
+#team h2 span:nth-child(6) {
+	animation: xfade_teamNames 4s 17s 1;
+}
+#team h2 span:nth-child(7) {
+	animation: xfade_teamNames 4s 20s 1;
+}
+#team h2 span:nth-child(8) {
+	animation: xfade_teamNames 4s 23s 1;
+}
+#team h2 span:nth-child(9) {
+	animation: xfade_teamNames 4s 26s 1;
+}
+#team h2 span:nth-child(10) {
+	animation: xfade_teamNames_last 33s 0s 1;
+}
+@keyframes xfade_teamNames {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@keyframes xfade_teamNames_first {
+	0% {opacity: 1;}
+  	33.3% {opacity: 1}
+	100% {opacity: 0;}
+}
+@keyframes xfade_teamNames_last {
+	0% {opacity: 0;}
+  	87.5% {opacity: 0}
+	100% {opacity: 1;}
+}
 .member {
 	background-color: rgba(255,90,95,1);
     float: left;
