@@ -618,11 +618,11 @@ function createContactSuggestions () {
 		html += '<div><span>' + x + '</span></div>';
 	}
 	$('#contactSuggestions').append(html);
-	createCSSslideshow('#contactSuggestions div', '4', 'infinite');
+	createCSSslideshow('#contactSuggestions div', 'contactSuggestions', '4', 'infinite');
 };
 createContactSuggestions();
 
-function createCSSslideshow(selector, interval, repeat) {
+function createCSSslideshow(selector, name, interval, repeat) {
 	var slideCount = $(selector).length;
 	var runtime = slideCount * interval;
 	var stagger = 0;
@@ -632,7 +632,7 @@ function createCSSslideshow(selector, interval, repeat) {
 	for (i=1; i<=slideCount; i++) {
 		stagger = interval * i;
 		selectors +=  selector + ':nth-child(' + i + ') {' +
-			'animation: xfade ' + runtime + 's ' + stagger + 's ' + repeat + ';' + 
+			'animation: xfade_' + name + ' ' + runtime + 's ' + stagger + 's ' + repeat + ';' + 
 		'}';
 	};
 
@@ -643,7 +643,7 @@ function createCSSslideshow(selector, interval, repeat) {
 		'98':0,
 		'100':1
 	};
-	var keyframes = '@keyframes xfade {';
+	var keyframes = '@keyframes xfade_' + name + ' {';
 	for (var i in steps) {
 		keyframes += 
 			i + '% {' +
