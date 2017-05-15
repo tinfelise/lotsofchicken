@@ -927,4 +927,16 @@ function testBusy() {
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript">
+  try {
+    console //does the console exist?
+  }
+  catch(e) { //if not...
+    console = {}; //create a console object for IE
+    console.log = function() {}; //add a log method to the new console object
+    //add other console methods here if you need them
+  }
+</script>
+
 </html>
