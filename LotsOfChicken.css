@@ -528,7 +528,7 @@ h2:before {
 .food .description {
 	width:100%;
 	font-size: .75em;
-	height: 3em;
+	height: 1em;
 	overflow: hidden;
 	-webkit-mask-image: linear-gradient(
 		black 0%, 
