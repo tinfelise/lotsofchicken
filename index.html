@@ -643,7 +643,6 @@ function createCSSslideshow(selector, name, interval, repeat) {
 	var slideCount = $(selector).length;
 	var runtime = slideCount * interval;
 	var stagger = 0;
-	var startFade = 100 / slideCount;
 
 	var selectors = '';
 	for (i=1; i<=slideCount; i++) {
@@ -653,13 +652,18 @@ function createCSSslideshow(selector, name, interval, repeat) {
 		'}';
 	};
 
+	var showTime = 100 / slideCount;
+	var showFadeRatio = 90/100; // change to fadeTime (seconds), which is then translated into a ratio
+	var startFade = showTime * showFadeRatio;
+
 	var steps = {
 		'0':1,
-		[startFade * 0.9]:1,
-		[startFade]:0,
+		[startFade]:1,
+		[showTime]:0,
 		'98':0,
 		'100':1
 	};
+
 	var keyframes = '@keyframes xfade_' + name + ' {';
 	for (var i in steps) {
 		keyframes += 
