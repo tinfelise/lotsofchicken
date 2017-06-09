@@ -384,6 +384,9 @@ function calendar () {
 			// 	);
 			// };
 		};
+		if (eventCount == 1 && x.occasion) {
+			$('#coop').addClass(x.occasion);
+		}
 	};
 
 	var width = (100/3);
@@ -508,6 +511,10 @@ function createEventDetails(id) {
 		endTime = formatTime(endTime);
 
 	createCountdown(start);
+	var occasion = '';
+	if (x.occasion) {
+		occasion = '<span class="occasion">' + x.occasion + '</span> | '
+	}
 	$('#current').html(
 		'<a href=\'' + loc.directions + '\' target=\'blank_\' id=\'currentPlace\'>' + 
 			'<i class="fa fa-location-arrow" aria-hidden="true"></i> ' +
@@ -516,8 +523,10 @@ function createEventDetails(id) {
 			'<span>' + loc.city + '</span> ' + 
 		'</a>' +
 		'<div id=\'currentTime\'>' + 
+			occasion +
 			'<span>' + moment(start).format('dddd, MMMM Do') + '</span>' + 
-			' | <span>' + startTime + ' to ' + endTime + '</span>' + 
+			// ' | <span>' + startTime + ' to ' + endTime + '</span>' + 
+			' | <span>' + startTime + ' until done</span>' + 
 		'</div>'
 	);
 	$('.event').removeClass('upNext');

@@ -195,8 +195,18 @@ header.filledHeader a {
 	background-color:rgba(255,90,95,.5);
 	z-index: 0;
 }
-#coop div,
-#coop a {
+#coop.pride:after {
+	background: linear-gradient(124deg, red, orange, yellow, green, blue, purple, red);
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400);
+	background-size: 1200%;
+	opacity:.5;
+	-webkit-animation: rainbow 10s linear infinite;
+	-z-animation: rainbow 10s linear infinite;
+	-o-animation: rainbow 10s linear infinite;
+	animation: rainbow 10s ease 1;
+	animation-fill-mode:forwards;
+}
+#coop > * {
 	z-index:1;
 }
 
@@ -363,6 +373,12 @@ div#upcoming::-webkit-scrollbar {
 	/*padding: .5em;
 	border: 1px solid #fff;
 	border-radius: .5em;*/
+}
+#current #currentTime {
+	text-transform: capitalize;
+}
+#currentTime .occasion {
+	font-family: 'Roboto', sans-serif;
 }
 
 #pay {
@@ -1016,6 +1032,32 @@ footer #pay {
 	20%, 80% {transform: translate3d(2px, 0, 0);}
 	30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
 	40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0%}
+    100%{background-position:100%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0%}
+    100%{background-position:100%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0%}
+    100%{background-position:100%}
+}
+@keyframes rainbow { 
+    /*0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}*/
+    0%{
+    	/*background-position:0%;*/
+    	background-size:1200%;
+    }
+    100%{
+    	/*background-position:100%;*/
+    	background-size:100%;
+    }
 }
 
 @media only screen and (max-width: 1330px) {
