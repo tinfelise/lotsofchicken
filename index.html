@@ -250,7 +250,7 @@
 	<div id='ie'>
 		<div class='container'>
 			<img src='images/logo_white.png' alt='LOC logo'>
-			<h1>LOC does not currently <span>serve IE users.</span></h1>
+			<h1>LOC does not currently <span>serve this browser.</span></h1>
 			<div>
 				Please upgrade to a <a href='https://www.google.com/chrome'>modern browser</a> 
 				<span>to enjoy our chicken.</span>
@@ -262,6 +262,16 @@
 
 <script src="data.js"></script>
 <script type="text/javascript">
+
+//Block IE browsers
+// function checkBrowser(browser) {
+// 	if (browser == 'IE') {
+// 		blockBrowser();
+// 	};
+// };
+function blockBrowser() {
+	$('#ie').toggleClass('show');
+};
 
 //Scroll events
 $(window).scroll( function () {
@@ -903,7 +913,7 @@ function testURLs() {
 		var position = test.split('#')[1];
 		test = test.split('#')[0];
 		console.log('Testing ' + test + ' at height ' + position);
-	}
+	};
 	if (test == 'open') {
 		testOpen();
 	};
@@ -915,7 +925,10 @@ function testURLs() {
 	};
 	if (test == 'freezetime') {
 		toggleCountdown();
-	}
+	};
+	if (test == 'ie') {
+		blockBrowser();
+	};
 };
 function testOpen () {
 	var now = new Date();

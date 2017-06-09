@@ -1017,9 +1017,9 @@ footer #pay {
 	z-index: 11;
 	background-color: black;
 }
-/*#ie.show {
+#ie.show {
 	display:block;
-}*/
+}
 #ie .container {
 	margin: auto;
     padding: 1em;
@@ -1543,6 +1543,9 @@ footer #pay {
 
 	#ie .container {
 		width:100%;
+	}
+	#ie h1 {
+		font-size:1.5em;
 	}
 }
 
