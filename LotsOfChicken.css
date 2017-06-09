@@ -1006,6 +1006,48 @@ footer #pay {
 	color:#fff;
 	background-color: #fff;
 }
+
+#ie {
+	/*display:none;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	background-color: black;
+}
+/*#ie.show {
+	display:block;
+}*/
+#ie .container {
+	margin: auto;
+    padding: 1em;
+    width: 75%;
+    max-width: 1200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+#ie img {
+	height:12rem;
+}
+#ie h1 {
+	padding: 1rem 0;
+}
+#ie span {
+	white-space: nowrap;
+}
+#ie a {
+	display:inline-block;
+	border-bottom:1px solid #fff;
+	text-transform: uppercase;
+	color:#fff;
+}
+
 .clearfix:after { 
    content: "."; 
    visibility: hidden; 
@@ -1498,6 +1540,10 @@ footer #pay {
 		width: 90%;
 		margin: .5em auto;
 	}
+
+	#ie .container {
+		width:100%;
+	}
 }
 
 @media only screen and (max-width: 700px) and (orientation:landscape) {
@@ -1536,6 +1582,17 @@ footer #pay {
 	}
 	#faqs ul {
 		column-count: 2;
+	}
+	#ie .container img {
+		height:6rem;
+	}
+}
+/*Everything but Internet Explorer and Safari ≤6*/
+@media screen { 
+	@media (min-width: 0px) {
+		#ie {
+			display:none;
+		}
 	}
 }
 
