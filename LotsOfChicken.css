@@ -11,6 +11,7 @@ html {
 *:after {
 	box-sizing: inherit;
 }
+
 body {
 	font-family: 'Quicksand', sans-serif;
 	font-size:24px;
@@ -19,15 +20,49 @@ body {
 	background-color: #fafafa;
 	color:#2e343b;
 }
+/*body * {
+	border:1px solid black;
+}*/
+
 h1,
 h2,
 h3 {
 	font-family: 'Roboto', sans-serif;
 	/*font-weight:700;*/
 }
-/*body * {
-	border:1px solid black;
+h1 {
+	font-size:3em;
+	color:#fff;
+	text-shadow: 0px 0px 4em #555;
+	margin:0;
+}
+h1 strong {
+	text-transform: uppercase;
+	display: block;
+	font-weight: inherit;
+}
+h2 {
+	margin:0;
+	padding: 1em 0;
+}
+h2:before {
+	content: '.';
+	height:1em;
+	width:.25em;
+	background-color:#2e343b;
+	color:#2e343b;
+	background-color:#ff5a5f;
+	color:#ff5a5f;
+	margin-right: .25em;
+}
+/*h2.white:before {
+	color:#fff;
+	background-color: #fff;
 }*/
+h3 {
+	margin-top:0;
+}
+
 input, 
 label,
 a,
@@ -164,17 +199,7 @@ header.filledHeader a {
 #coop a {
 	z-index:1;
 }
-h1 {
-	font-size:3em;
-	color:#fff;
-	text-shadow: 0px 0px 4em #555;
-	margin:0;
-}
-h1 strong {
-	text-transform: uppercase;
-	display: block;
-	font-weight: inherit;
-}
+
 .locator {
 	margin: auto;
 	padding: 1em;
@@ -382,25 +407,6 @@ div#upcoming::-webkit-scrollbar {
 	opacity: 1 !important;
 	transition: opacity 2s, height 2s;
 }
-
-h2 {
-	margin:0;
-	padding: 1em 0;
-}
-h2:before {
-	content: '.';
-	height:1em;
-	width:.25em;
-	background-color:#2e343b;
-	color:#2e343b;
-	background-color:#ff5a5f;
-	color:#ff5a5f;
-	margin-right: .25em;
-}
-/*h2.white:before {
-	color:#fff;
-	background-color: #fff;
-}*/
 
 #wings {
 	position: relative;
@@ -844,9 +850,6 @@ h2:before {
     background-color: #fff;
     width:100%;
     display: inline-block;
-}
-h3 {
-	margin-top:0;
 }
 #faqs li a {
 	text-decoration: underline;
