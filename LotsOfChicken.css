@@ -1590,7 +1590,7 @@ footer #pay {
 		height:6rem;
 	}
 }
-/*Everything but Internet Explorer and Safari ≤6*/
+/*Everything but Internet Explorer and Safari ≤6 from Browserhacks.com */
 @media screen { 
 	@media (min-width: 0px) {
 		#ie {
