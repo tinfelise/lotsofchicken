@@ -514,28 +514,23 @@ function createEventDetails(id) {
 	var x = events[id];
 	var loc = locations[x.location - 1];
 	
-	var start = x.start;
-	if (!$.isNumeric(start)) {
-		start = Date.parse(start);
-	};
-	var end = x.end;
-	if (!$.isNumeric(end)) {
-		end = Date.parse(end);
-	};
-	
-	var day = moment(start).format('D');
-	var mon = moment(start).format('MMM');
-	
-	var startTime = moment(start).format('kk:mm');
+	var start = moment(x.start,'MMM D YYYY h:mm:ss');	
+	var day = start.format('D');
+	var mon = start.format('MMM');
+	var startTime = start.format('kk:mm');
 		startTime = formatTime(startTime);
-	var endTime = moment(end).format('kk:mm');
+	var unixStart = start.format('x');
+	createCountdown(unixStart);
+
+	var end = moment(x.end, 'MMM D YYYY h:mm:ss');
+	var endTime = end.format('kk:mm');
 		endTime = formatTime(endTime);
 
-	createCountdown(start);
 	var occasion = '';
 	if (x.occasion) {
 		occasion = '<span class="occasion">' + x.occasion + '</span> | '
 	}
+	
 	$('#current').html(
 		'<a href=\'' + loc.directions + '\' target=\'blank_\' id=\'currentPlace\'>' + 
 			'<i class="fa fa-location-arrow" aria-hidden="true"></i> ' +
