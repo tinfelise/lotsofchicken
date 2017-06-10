@@ -24,8 +24,8 @@ var events = [
 	},
 	{
 		'location':'1',
-		'start': 'Jun 24 2017 12:00:00 PDT',
-		'end': 'Jun 24 2017 15:00:00 PDT',
+		'start': 'Jun 24 2017 13:00:00 PDT',
+		'end': 'Jun 24 2017 16:00:00 PDT',
 		'occasion': 'pride'
 	}
 ];
