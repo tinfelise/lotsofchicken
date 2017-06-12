@@ -1,5 +1,6 @@
 {
-    "name": "L.O.C.",
+    "short_name":"L.O.C.",
+    "name": "L.O.C. | Lots of Chicken | Dolores Park | Simply The Best",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -14,5 +15,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url":"/?utm_source=homescreen"
 }
