@@ -382,7 +382,7 @@ div#upcoming::-webkit-scrollbar {
 	font-family: 'Roboto', sans-serif;
 }
 
-#pay {
+.pay {
 	background-color: #fff;
 	border:1px solid #ccc;
 	border-radius: .5em;
@@ -390,14 +390,14 @@ div#upcoming::-webkit-scrollbar {
 	text-align: center;
 	text-transform: uppercase;
 }
-#pay span {}
-#pay span:after {
+.pay span {}
+.pay span:after {
 	/*content:'Powered by Venmo';
 	display:block;
 	float:right;
 	font-size:.5em;*/
 }
-#pay span:before {
+.pay span:before {
 	content:'';
 	display:inline-block;
 	background-image:url('images/venmo-logo-mark.png');
@@ -407,7 +407,7 @@ div#upcoming::-webkit-scrollbar {
 	background-size:cover;
 	margin-right:.5em;
 }
-#coop #pay {
+#coop .pay {
 	/*position:absolute;
 	bottom:.5em;
 	right:.5em;*/
@@ -963,7 +963,7 @@ footer {
 footer div {
 	margin:auto;
 }
-footer #pay {
+footer .pay {
 	float:right;
 }
 .social {
@@ -1523,7 +1523,7 @@ footer #pay {
 	}
 
 	footer .social,
-	footer #pay {
+	footer .pay {
 		float:none;
 		display: block;
 	}
@@ -1536,7 +1536,7 @@ footer #pay {
 		margin:auto;
 		text-align: center
 	}
-	footer #pay {
+	footer .pay {
 		width: 90%;
 		margin: .5em auto;
 	}

@@ -94,7 +94,7 @@
 			<h1><strong>Can I chicken?</strong> <span id='rapResponse'>Yes you can!</span></h1>
 			<div id='countdown'></div>
 			<div id='current'></div>
-			<a id='pay' href='https://venmo.com/?txn=pay&audience=friends&recipients=LOC-Chicken&note=The%20best%20ever%20chicken%20wings%20and%20sawce%20in%20Dolores%20Park.%20%F0%9F%90%94%F0%9F%8D%97&share=f' target="blank_">
+			<a class='pay' href='https://venmo.com/?txn=pay&audience=friends&recipients=LOC-Chicken&note=The%20best%20ever%20chicken%20wings%20and%20sawce%20in%20Dolores%20Park.%20%F0%9F%90%94%F0%9F%8D%97&share=f' target="blank_">
 				<span>Pay for my chicken</span>
 			</a>
 		</div>
@@ -224,7 +224,7 @@
 				<a href='https://www.instagram.com/Lotsofchix/' target='blank_'><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></a>
 				<a href='https://www.yelp.com/biz/l-o-c-lots-of-chicken-san-francisco' target='blank_'><i class="fa fa-yelp" aria-hidden="true" title="Yelp"></i></a>
 			</div>
-			<a id='pay' href='https://venmo.com/?txn=pay&audience=friends&recipients=LOC-Chicken&note=The%20best%20ever%20chicken%20wings%20and%20sawce%20in%20Dolores%20Park.%20%F0%9F%90%94%F0%9F%8D%97&share=f' target="blank_">
+			<a class='pay' href='https://venmo.com/?txn=pay&audience=friends&recipients=LOC-Chicken&note=The%20best%20ever%20chicken%20wings%20and%20sawce%20in%20Dolores%20Park.%20%F0%9F%90%94%F0%9F%8D%97&share=f' target="blank_">
 				<span>Pay for my chicken</span>
 			</a>
 		</div>
@@ -488,7 +488,7 @@ function formatTime(time) {
 // 	});
 // };
 function createCountdown (timestamp) {
-	$('#coop #pay').removeClass('viewPay');
+	$('#coop .pay').removeClass('viewPay');
 	$('#countdown').countdown(timestamp)
 		.on('update.countdown', function(event) {
 			var format = '<div>In ';
@@ -510,7 +510,7 @@ function createCountdown (timestamp) {
 		})
 		.on('finish.countdown', function(event) {
 			$(this).html('LOC Chicken is currently open');
-			$('#coop #pay').addClass('viewPay');
+			$('#coop .pay').addClass('viewPay');
 		});
 };
 function createEventDetails(id) {
