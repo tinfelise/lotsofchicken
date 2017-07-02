@@ -910,7 +910,7 @@ div#upcoming::-webkit-scrollbar {
 #houseCalls a {
 	display:block;
 	margin:auto;
-	width:100%;
+	width:25%;
 	text-align: center;
 }
 #contactSuggestions:before {
@@ -1196,6 +1196,10 @@ footer .pay {
 
 	#faqs ul {
 		column-count: 2;
+	}
+	#contactSuggestions,
+	#houseCalls a {
+		width: 40%;
 	}
 
 	footer .love {
@@ -1534,6 +1538,11 @@ footer .pay {
 	}
 	.testimonial:nth-of-type(2n+0) .testimonialText {
 		text-align: left !important;
+	}
+
+	#contactSuggestions,
+	#houseCalls a {
+		width: 100%;
 	}
 
 	footer .social,
