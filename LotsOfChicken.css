@@ -664,7 +664,7 @@ div#upcoming::-webkit-scrollbar {
 			transparent 75%, 
 			rgba(0,0,0,.75) 100%
 		),
-		url('images/day1/loc-2.jpg');
+		url('https://i.imgur.com/dqhBtjS.jpg');
 	background-size:cover;
 	background-position:center;
 	min-height:75vh;
@@ -880,6 +880,7 @@ div#upcoming::-webkit-scrollbar {
 
 #houseCalls {
 	background-image: url(images/day1/loc-6_cropped.jpg);
+	background-image: url(https://i.imgur.com/8XTEoH0.jpg);
 	background-size: cover;
 	background-position: top;
 	position:relative;
@@ -1115,6 +1116,19 @@ footer .pay {
 	}
 	.testimonial {
 		height:20vh;
+	}
+	#team {
+		background-image: 
+			linear-gradient(
+				rgba(0,0,0,.75) 0%, 
+				transparent 25%, 
+				transparent 75%, 
+				rgba(0,0,0,.75) 100%
+			),
+			url('https://i.imgur.com/X3klwZF.jpg');
+	}
+	#houseCalls {
+		background-image: url(https://i.imgur.com/g0MJ0gD.jpg);
 	}
 }
 @media only screen and (max-width: 900px) {
