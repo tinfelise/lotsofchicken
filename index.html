@@ -283,6 +283,7 @@ $(window).scroll( function () {
 	var offsetPosition = position + header;
 	var height = $(window).height();
 	var bottom = position + height;
+	var pageBottom = $(document).height();
 
 	// Nav bar positioning
     $('section').each(function() {
@@ -290,9 +291,14 @@ $(window).scroll( function () {
         if (offsetPosition > $(this).offset().top && offsetPosition <= $(this).offset().top + $(this).height() ){ 
             $('nav a[href="#'+id+'"]').addClass('current');
         } else {
-            $('nav a[href="#'+id+'"]').removeClass('current');   
+            $('nav a[href="#'+id+'"]').removeClass('current');
         }   
     });
+    if (bottom == pageBottom) {
+		var last = $('section').last().attr('id');
+		$('nav a').removeClass('current');
+		$('nav a[href="#'+last+'"]').addClass('current');
+	};
 
     // Header fill state
     if (position > header) {
