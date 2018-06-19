@@ -27,6 +27,12 @@ var events = [
 		'start': 'Jun 24 2017 13:00:00 PDT',
 		'end': 'Jun 24 2017 16:00:00 PDT',
 		'occasion': 'pride'
+	},
+	{
+		'location':'1',
+		'start': 'Jun 23 2018 11:00:00 PDT',
+		'end': 'Jun 23 2018 16:00:00 PDT',
+		'occasion': 'pride'
 	}
 ];
 
